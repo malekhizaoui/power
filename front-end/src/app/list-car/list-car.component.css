@@ -1,0 +1,24 @@
+.myCard{
+    margin: 10px;
+    width:500px !important;
+    background-color: rgba(2, 10, 34, 0.801);
+    margin-top: 80px;
+}
+
+.mycontainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color:rgb(230, 218, 197) ;
+}
+.mycontainer > div{
+    min-width: 20vw !important;
+}
+
+.card-title{
+    color: cornsilk;
+}
+.card-text{
+    color: cornsilk;
+
+}

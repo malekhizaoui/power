@@ -6,14 +6,22 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 import { ExamplesModule } from './examples/examples.module';
+import { HttpClientModule } from '@angular/common/http';
 
+import { CarService } from './car.service';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { ListCarComponent } from './list-car/list-car.component';
+import { CarDetailComponent } from './car-detail/car-detail.component';
+
 
 @NgModule({
     declarations: [
         AppComponent,
-        NavbarComponent
+        NavbarComponent,
+        ListCarComponent,
+        CarDetailComponent,
+        
     ],
     imports: [
         BrowserAnimationsModule,
@@ -22,9 +30,10 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
         RouterModule,
         AppRoutingModule,
         ComponentsModule,
-        ExamplesModule
+        ExamplesModule,
+        HttpClientModule
     ],
-    providers: [],
+    providers: [CarService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
