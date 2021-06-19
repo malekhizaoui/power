@@ -12,7 +12,7 @@ export class User {
   LastName: String;
 
   @Column()
-  Email: String;
+  email: String;
 
   @Column()
   phoneNumber: Number;
@@ -20,15 +20,15 @@ export class User {
   @Column()
   password: String;
 
-  @Column()
+  @Column( {default: ""})
   image: String;
 
-  @Column()
+  @Column( {default: ""})
   adress: String;
 
-  @Column()
+  @Column( {default: null})
   cin: Number;
 
-  @Column()
+  @Column( {default: ""})
   type: String;
 }
