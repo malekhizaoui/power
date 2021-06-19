@@ -6,7 +6,7 @@ export class Car {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @OneToMany(type => User, user => user.id) users: User[];  
+  @OneToMany(type => User, user => user.FirstName) users: User[];  
 
   @Column()
   name: string;

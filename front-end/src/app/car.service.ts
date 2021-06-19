@@ -23,6 +23,7 @@ export class CarService {
   getCar(id: number): Observable<Car> {
     const url = `${this.carUrl}/${id}`;
     return this.http.get<Car>(url)
+    
   }
 
   getUser(id:number):Observable<User>{
