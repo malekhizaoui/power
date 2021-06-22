@@ -1,4 +1,4 @@
-import { Entity, Column, PrimaryGeneratedColumn , OneToMany } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn , ManyToOne } from 'typeorm';
 import{User} from '../../user/user.entity'
 
 @Entity()
@@ -6,13 +6,20 @@ export class Car {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @OneToMany(type => User, user => user.FirstName) users: User[];  
+  @ManyToOne(() => User, user => user.FirstName) 
+  users: User[];  
 
   @Column()
-  name: string;
+  brand: string;
 
   @Column()
-  price: string;
+  model: string;
+
+  @Column()
+  engine: string;
+  
+  @Column()
+  price: number;
 
   @Column()
   seats: number;
@@ -21,23 +28,20 @@ export class Car {
   doors: number;
 
   @Column()
-  transmission: string;
-
-  @Column()
   suitcases: number;
 
   @Column()
-  aircond: string;
+  airconditioner: string;
 
   @Column()
-  age: number;
+  transmission: string;
 
   @Column()
-  img1: string;
+  file1: string;
 
   @Column()
-  img2: string;
+  file2: string;
 
   @Column()
-  img3: string;
+  file3: string;
 }

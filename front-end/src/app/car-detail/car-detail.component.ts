@@ -31,9 +31,5 @@ export class CarDetailComponent implements OnInit {
       .subscribe(car => this.car = car);
   }
 
-  getUser():void{
-    const id = parseInt(this.route.snapshot.paramMap.get('id')!) 
-    this.CarService.getUser(id)
-    .subscribe()
-  }
+  
 }

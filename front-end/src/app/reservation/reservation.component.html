@@ -1,0 +1,214 @@
+<!-- <p>reservation works!</p> -->
+<div id='x' class="ComponentD8v0__header has-layout" style="padding: 15px">
+    <form action="liste" method="post">
+        <div>
+            <h1 class="homeh1">Location voiture Tunisie</h1>
+            <div class="col-lg-12 col-xs-12 agence-prise" style="margin:4px 0px;">
+                <label style="font-size: 13px;/* height:6px; */color:#000;font-weight:normal;width: 100%;margin-bottom: 6px;">Agence de prise en charge</label>
+                
+                <select name="agencePrise" id="agencePrise">
+                    
+                        <optgroup label="Aéroport">
+                            
+                                <option value="5">Aéroport Djerba</option>
+                            
+                                <option value="2">Aéroport Enfidha</option>
+                            
+                                <option value="3">Aéroport Monastir</option>
+                            
+                                <option value="1" selected="">Aéroport Tunis Carthage</option>
+                            
+                        </optgroup>
+                    
+                        <optgroup label="Centre ville">
+                            
+                                <option value="21">Djerba</option>
+                            
+                                <option value="19">Hammamet</option>
+                            
+                                <option value="24">Monastir</option>
+                            
+                                <option value="18">Nabeul</option>
+                            
+                                <option value="20">Sousse</option>
+                            
+                                <option value="22">Tozeur</option>
+                            
+                                <option value="17">Tunis</option>
+                            
+                        </optgroup>
+                    
+                </select>
+                <div class="agence-restitution  " style="margin:4px 0px; display: none">
+                    <label style="">Agence de restitution </label>
+                    <select name="agenceRestitution" id="agenceRestitution">
+                        
+                            <optgroup label="Aéroport">
+                                
+                                    <option value="5">Aéroport Djerba</option>
+                                
+                                    <option value="2">Aéroport Enfidha</option>
+                                
+                                    <option value="3">Aéroport Monastir</option>
+                                
+                                    <option value="1" selected="">Aéroport Tunis Carthage</option>
+                                
+                            </optgroup>
+                        
+                            <optgroup label="Centre ville">
+                                
+                                    <option value="21">Djerba</option>
+                                
+                                    <option value="19">Hammamet</option>
+                                
+                                    <option value="24">Monastir</option>
+                                
+                                    <option value="18">Nabeul</option>
+                                
+                                    <option value="20">Sousse</option>
+                                
+                                    <option value="22">Tozeur</option>
+                                
+                                    <option value="17">Tunis</option>
+                                
+                            </optgroup>
+                        
+                    </select>
+                    
+                </div>
+                <div style="font-size:11px; color:#000; width: 230px;">
+                    <input type="checkbox" value="1" name="restitution_diff" class="restitution-diff">
+                    Agence de restitution différente </div>
+            </div>
+            <div class="col-lg-8 col-xs-8" style="margin:4px 0px;">
+                <label style="font-size: 13px;/* height:6px; */color:#000;font-weight:normal;width: 100%;margin-bottom: 6px;">Date de retrait</label>
+                
+                    <input type="text" class="form-control dateP" name="datePrise" value="23/06/2021" readonly="" autocomplete="off">
+                 
+                 
+            </div>
+            <div class="col-lg-4 col-xs-4 heure" style="margin:4px 0px;">
+                <label>Heure</label>
+                <select name="heurePrise" class="inputs2">
+                    
+                            <option value="0">00:00</option>
+                        
+                            <option value="1">01:00</option>
+                        
+                            <option value="2">02:00</option>
+                        
+                            <option value="3">03:00</option>
+                        
+                            <option value="4">04:00</option>
+                        
+                            <option value="5">05:00</option>
+                        
+                            <option value="6">06:00</option>
+                        
+                            <option value="7">07:00</option>
+                        
+                            <option value="8">08:00</option>
+                        
+                            <option value="9">09:00</option>
+                        
+                            <option value="10" selected="">10:00</option>
+                        
+                            <option value="11">11:00</option>
+                        
+                            <option value="12">12:00</option>
+                        
+                            <option value="13">13:00</option>
+                        
+                            <option value="14">14:00</option>
+                        
+                            <option value="15">15:00</option>
+                        
+                            <option value="16">16:00</option>
+                        
+                            <option value="17">17:00</option>
+                        
+                            <option value="18">18:00</option>
+                        
+                            <option value="19">19:00</option>
+                        
+                            <option value="20">20:00</option>
+                        
+                            <option value="21">21:00</option>
+                        
+                            <option value="22">22:00</option>
+                        
+                            <option value="23">23:00</option>
+                        
+                </select>
+            </div>
+            <div class="col-lg-8 col-xs-8" style="margin:4px 0px;">
+                <label>Date de retour</label>
+                
+                <input type="text" class="form-control dateR" name="dateRestitution" value="26/06/2021" readonly="" autocomplete="off">
+                
+                 
+            </div>
+            <div class="col-lg-4 col-xs-4 heure" style="margin:4px 0px;">
+                <label>Heure</label>
+                <select name="heureRestitution" class="inputs2">				
+                    
+                            <option value="0">00:00</option>
+                        
+                            <option value="1">01:00</option>
+                        
+                            <option value="2">02:00</option>
+                        
+                            <option value="3">03:00</option>
+                        
+                            <option value="4">04:00</option>
+                        
+                            <option value="5">05:00</option>
+                        
+                            <option value="6">06:00</option>
+                        
+                            <option value="7">07:00</option>
+                        
+                            <option value="8">08:00</option>
+                        
+                            <option value="9">09:00</option>
+                        
+                            <option value="10" selected="">10:00</option>
+                        
+                            <option value="11">11:00</option>
+                        
+                            <option value="12">12:00</option>
+                        
+                            <option value="13">13:00</option>
+                        
+                            <option value="14">14:00</option>
+                        
+                            <option value="15">15:00</option>
+                        
+                            <option value="16">16:00</option>
+                        
+                            <option value="17">17:00</option>
+                        
+                            <option value="18">18:00</option>
+                        
+                            <option value="19">19:00</option>
+                        
+                            <option value="20">20:00</option>
+                        
+                            <option value="21">21:00</option>
+                        
+                            <option value="22">22:00</option>
+                        
+                            <option value="23">23:00</option>
+                        
+                </select>
+            </div>
+            <button class="Button Button_primary Button_icon pull-right" style=" margin-right: 18px; margin-top: 15px;">
+            <svg viewBox="0 0 30 30">
+                <path d="M4.016 3.284c0-1.904.879-2.929 2.929-2.929h16.11c1.904 0 2.929.879 2.929 2.929v23.433c0 1.904-.879 2.929-2.929 2.929H6.945c-1.904 0-2.929-.879-2.929-2.929V3.284zm2.929 24.897h16.11c1.025 0 1.465-.439 1.465-1.465V3.284c0-1.025-.439-1.465-1.465-1.465H6.945c-1.025 0-1.465.439-1.465 1.465v23.433c0 1.025.293 1.464 1.465 1.464zM8.41 4.748h13.18v7.323H8.41V4.748zM8.41 15h2.929v1.465H8.41V15zm0 4.394h2.929v1.465H8.41v-1.465zm0 4.393h2.929v1.465H8.41v-1.465zM20.126 6.213H9.874v4.394h10.252V6.213zM13.389 15h3.368v1.465h-3.368V15zm0 4.394h3.368v1.465h-3.368v-1.465zm0 4.393h3.368v1.465h-3.368v-1.465zM18.661 15h2.929v1.465h-2.929V15zm0 4.394h2.929v1.465h-2.929v-1.465zm0 4.393h2.929v1.465h-2.929v-1.465z"></path>
+            </svg>
+            Devis et réservation</button>
+            <div class="clearfix"></div>
+        </div>
+    </form>
+    <br>
+</div>

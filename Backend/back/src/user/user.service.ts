@@ -5,7 +5,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { User } from './user.entity';
 
-import * as  bcrypt  from 'bcrypt'; 
+// import * as  bcrypt  from 'bcrypt'; 
 // export type User = any;
 @Injectable()
 export class UserService {
@@ -14,15 +14,6 @@ export class UserService {
     private usersRepository: Repository<User>,
   ) {}
 
-<<<<<<< HEAD
-  async create(createUserDto: CreateUserDto) {
-    let user = await this.usersRepository.save(createUserDto);
-    console.log
-    return user
-  }
-
-  findAll() {
-=======
   // private readonly users = [
   //   {
   //     id: 1,
@@ -55,16 +46,21 @@ export class UserService {
     return this.usersRepository.findOne({ email: email });
   }
 
-  // async create(createUserDto: CreateUserDto) {
-  //   const user = new User();
-  //   user.FirstName = createUserDto.FirstName;
-  //   user.LastName = createUserDto.LastName;
-  //   user.email = createUserDto.email;
-  //   user.phoneNumber = createUserDto.phoneNumber;
-  //   user.password = createUserDto.password;
-  //   await this.usersRepository.save(user);
-  //   return user;
-  // }
+  async create(createUserDto: CreateUserDto) {
+    const user = this.newMethod(createUserDto);
+    await this.usersRepository.save(createUserDto);
+    return user;
+  }
+
+  private newMethod(createUserDto: CreateUserDto) {
+    const user = new User();
+    user.FirstName = createUserDto.FirstName;
+    user.LastName = createUserDto.LastName;
+    user.email = createUserDto.email;
+    user.phoneNumber = createUserDto.phoneNumber;
+    user.password = createUserDto.password;
+    return user;
+  }
 
   // async signup(createUserDto: CreateUserDto) {
   //   const user = new User();
@@ -77,29 +73,28 @@ export class UserService {
   //       return JSON.stringify({msg : 'This email exists'});
   //     }
 
-  //     // const createdUser = async create(createUserDto: CreateUserDto) {
-  //     //     const user = new User();
-  //     //     user.FirstName = createUserDto.FirstName;
-  //     //     user.LastName = createUserDto.LastName;
-  //     //     user.email = createUserDto.email;
-  //     //     user.phoneNumber = createUserDto.phoneNumber;
-  //     //     user.password = createUserDto.password;
-  //     //     await this.usersRepository.save(user);
-  //     //     return user;
-  //     //   }
+  //     const createdUser = async create(createUserDto: CreateUserDto) {
+  //         const user = new User();
+  //         user.FirstName = createUserDto.FirstName;
+  //         user.LastName = createUserDto.LastName;
+  //         user.email = createUserDto.email;
+  //         user.phoneNumber = createUserDto.phoneNumber;
+  //         user.password = createUserDto.password;
+  //         await this.usersRepository.save(user);
+  //         return user;
+  //       }
 
-  //   // const createdUser = this.usersRepository.create({
-  //   //   FirstName: createUserDto.FirstName,
-  //   //   LastName: createUserDto.LastName,
-  //   //   email: createUserDto.email,
-  //   //   password: hash,
-  //   //   status: createUserDto.status,
-  //   // });
+  //   const createdUser = this.usersRepository.create({
+  //     FirstName: createUserDto.FirstName,
+  //     LastName: createUserDto.LastName,
+  //     email: createUserDto.email,
+  //     password: hash,
+  //     status: createUserDto.status,
+  //   });
   //   return JSON.stringify({msg : "right"});
   // }
 
   findAll(): Promise<User[]> {
->>>>>>> ce6909466aa282bb0f82125d532d230fe4ecd0b9
     return this.usersRepository.find();
   }
 

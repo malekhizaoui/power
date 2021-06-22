@@ -11,20 +11,31 @@ import { CarService } from '../car.service';
 export class ListCarComponent implements OnInit {
 
  cars:Car[]=[];
-
+ name:string; 
   constructor(private CarService : CarService) {}
 
   ngOnInit(): void {
     this.getCars()
   }
-
-  getCars():void{
+   
+  getCars(){
     this.CarService.getCars()
     .subscribe((cars: Car[])=>{
       this.cars=cars
       console.log(this.cars)
     })
   }
+
+//   search (){
+//     if(this.name!==""){
+//      this.cars = this.cars.filter(res=>res.brand.toLocaleLowerCase().match(this.name.toLocaleLowerCase()))
+//       this.ngOnInit()
+//       console.log(this.name);
+      
+//     }else if (this.name==''){
+//       this.getCars()
+//     }
+// };
 
   
 }

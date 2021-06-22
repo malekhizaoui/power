@@ -90,7 +90,7 @@
         background-color: rgba(0,0,0,.5);
     }
 
-    &[filter-color="orange"]{
+    &[filter-color="purple"]{
         @include linear-gradient(rgba($black-color,.20), rgba(224, 23, 3, 0.6));
     }
 

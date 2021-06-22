@@ -3,3 +3,15 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+.bg-primary {
+    background-color: rgb(61, 58, 58) !important;
+}
+.navbar.navbar-transparent{
+    background-color: rgb(63, 62, 65) !important;
+}
+
+#find{
+    background-color: rgb(86, 38, 134)
+
+}

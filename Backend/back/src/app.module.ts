@@ -8,6 +8,7 @@ import { Car } from './car/entities/car.entity';
 
 import { CarModule } from './car/car.module';
 import { Connection } from 'typeorm';
+import { RatingModule } from './rating/rating.module';
 @Module({
   imports: [
     UserModule,
@@ -22,6 +23,7 @@ import { Connection } from 'typeorm';
       entities: [Car, User],
       synchronize: true,
     }),
+    RatingModule,
     
   ],
   controllers: [AppController],

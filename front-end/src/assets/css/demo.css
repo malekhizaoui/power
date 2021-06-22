@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* Now UI Kit Angular - v1.3.0
+*  Kit Angular - v1.3.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/now-ui-kit-angular
@@ -380,12 +380,12 @@
     margin: 15px 4px 0;
 }
 
-.section-thin,
-.section-notifications {
+-thin,
+-notifications {
     padding: 0;
 }
 
-.section-navbars {
+-navbars {
     padding-top: 0;
 }
 
@@ -398,35 +398,35 @@
     pointer-events: none;
 }
 
-.section-tabs {
+-tabs {
     background: #EEEEEE;
 }
 
-.section-pagination {
+-pagination {
     padding-bottom: 0;
 }
 
-.section-download {
+-download {
     padding-top: 130px;
 }
 
-.section-download .description {
+-download .description {
     margin-bottom: 60px;
 }
 
-.section-download h4 {
+-download h4 {
     margin-bottom: 25px;
 }
 
-.section-examples a {
+-examples a {
     text-decoration: none;
 }
 
-.section-examples a+a {
+-examples a+a {
     margin-top: 30px;
 }
 
-.section-examples h5 {
+-examples h5 {
     margin-top: 30px;
 }
 
@@ -466,7 +466,7 @@
     position: relative;
 }
 
-.section-javascript .title {
+-javascript .title {
     margin-bottom: 0;
 }
 
@@ -478,7 +478,7 @@
     display: none;
 }
 
-.section-signup .col .btn {
+-signup .col .btn {
     margin-top: 30px;
 }
 
@@ -486,16 +486,16 @@
     margin-bottom: 10px;
 }
 
-.section-basic {
+-basic {
     padding-top: 0;
 }
 
-.section-images {
+-images {
     padding-bottom: 0;
 }
 
 @media screen and (max-width: 991px) {
-    .section-navbars .navbar-collapse {
+    -navbars .navbar-collapse {
         display: none !important;
     }
 }

@@ -1,14 +1,14 @@
 export interface Car {
-  id:number
-  name: string;
-  price: string;
+  brand: string;
+  model: string;
+  engine: string;
+  price: number;
   seats: number;
   doors: number;
-  transmission: string;
   suitcases: number;
-  aircond: string;
-  age: number;
-  img1:string
-  img2:string
-  img3:string
+  airconditioner: string;
+  transmission: string;
+  file1: string;
+  file2: string;
+  file3: string;
 }

@@ -13,6 +13,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { ListCarComponent } from './list-car/list-car.component';
 import { CarDetailComponent } from './car-detail/car-detail.component';
+import { ReservationComponent } from './reservation/reservation.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { CarDetailComponent } from './car-detail/car-detail.component';
         NavbarComponent,
         ListCarComponent,
         CarDetailComponent,
+        ReservationComponent,
         
     ],
     imports: [

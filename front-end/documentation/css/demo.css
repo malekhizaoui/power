@@ -273,7 +273,7 @@
     margin-top: -277px;
 }
 
-.presentation-page .page-header+.section-components {
+.presentation-page .+.section-components {
     padding-top: 300px;
 }
 
@@ -442,27 +442,27 @@
     max-width: 410px;
 }
 
-.presentation-page .section-free-demo {
+.presentation-page .section-free- {
     overflow: hidden;
 }
 
-.presentation-page .section-free-demo .github-buttons>.btn {
+.presentation-page .section-free- .github-buttons>.btn {
     float: left;
     margin-right: 15px;
 }
 
-.presentation-page .section-free-demo .github-buttons .github-button {
+.presentation-page .section-free- .github-buttons .github-button {
     float: left;
     margin-top: 15px;
 }
 
-.presentation-page .section-free-demo .github-background-container {
+.presentation-page .section-free- .github-background-container {
     position: absolute;
     right: -420px;
     top: -50px;
 }
 
-.presentation-page .section-free-demo .github-background-container i {
+.presentation-page .section-free- .github-background-container i {
     font-size: 810px;
     opacity: .1;
 }
@@ -602,7 +602,7 @@
 }
 
 .presentation-page .circle-orange {
-    background-color: #ff9500;
+    background-color: #00ffd5;
 }
 
 .presentation-page .rellax-text-container,
@@ -650,8 +650,8 @@
     margin-bottom: 40px;
 }
 
-.presentation-page .page-header-city,
-.index-page .page-header-city {
+.presentation-page .-city,
+.index-page .-city {
     background-size: cover;
     background-position: top;
     top: 25.5%;
@@ -696,8 +696,8 @@
     background: #220c08;
 }
 
-.presentation-page .page-header,
-.index-page .page-header {
+.presentation-page .,
+.index-page . {
     background: #d0aea8;
 }
 
@@ -937,7 +937,7 @@
     }
 }
 
-.social-buttons-demo .btn {
+.social-buttons- .btn {
     margin-right: 5px;
     margin-bottom: 7px;
 }
@@ -1020,7 +1020,7 @@
     .presentation-page .rellax-text-container {
         top: 20% !important;
     }
-    .presentation-page .page-header+.section-components {
+    .presentation-page .+.section-components {
         padding-top: 200px;
     }
 }
@@ -1308,7 +1308,7 @@
     color: #333333;
 }
 
-.navbar-transparent.navbar-small .logo-container .brand {
+..navbar-small .logo-container .brand {
     color: #FFFFFF;
 }
 
@@ -1407,7 +1407,7 @@
     display: block;
 }
 
-.navbar-transparent .switch-background {
+. .switch-background {
     display: none;
 }
 
@@ -1436,7 +1436,7 @@
         position: relative;
         left: 0;
     }
-    .presentation-page .section-free-demo .github-background-container {
+    .presentation-page .section-free- .github-background-container {
         position: initial;
         left: 0;
         top: 0;
@@ -1444,7 +1444,7 @@
         margin: 0 auto;
         text-align: center;
     }
-    .presentation-page .section-free-demo .github-background-container i {
+    .presentation-page .section-free- .github-background-container i {
         font-size: 400px;
     }
     .presentation-page .section-components .col-md-3 {

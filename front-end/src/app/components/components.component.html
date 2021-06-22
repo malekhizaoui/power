@@ -1,5 +1,5 @@
 <div class="wrapper">
-  <div class="page-header clear-filter" filter-color="red">
+  <div class="page-header clear-filter" filter-color="orange">
     <div
       class="page-header-image rellax-header"
       data-rellax-speed="-7"
@@ -28,38 +28,29 @@
       <!-- </h6> -->
     </div>
   </div>
+  
   <div class="section section-examples " data-background-color="black">
     <div class="space-50"></div>
     <div class="container text-center">
       <div class="row">
+       
         <div class="col">
+          <a
+          id="find"
+          [routerLink]="['/allcars']"
+          class="btn btn-simple btn-primary btn-round"
+          >find all Cars</a
+        > 
           <a [routerLink]="['/allcars']">
             <img
-              src="https://media.autoexpress.co.uk/image/private/s--A-_0ENUL--/v1562241895/autoexpress/2015/11/premium-brands-logo.jpg"
+              src="https://cdn.img.gen.in/assets/Business/1595/Feeds/1925/1595_636537456181658097.jpg?rendered=true"
               alt="Image"
               class="img-raised"
             />
           </a>
-          <a
-            [routerLink]="['/allcars']"
-            class="btn btn-simple btn-primary btn-round"
-            >find all Cars</a
-          >
+         
         </div>
-        <div class="col">
-          <a [routerLink]="['/examples/profile']">
-            <img
-              src="assets/img/profile.jpg"
-              alt="Image"
-              class="img-raised"
-            />
-          </a>
-          <a
-            [routerLink]="['/examples/profile']"
-            class="btn btn-simple btn-primary btn-round"
-            >Contact Us</a
-          >
-        </div>
+      
       </div>
     </div>
   </div>
