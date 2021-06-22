@@ -14,6 +14,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { ListCarComponent } from './list-car/list-car.component';
 import { CarDetailComponent } from './car-detail/car-detail.component';
 import { ReservationComponent } from './reservation/reservation.component';
+import { RatingComponent } from './rating/rating.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { ReservationComponent } from './reservation/reservation.component';
         ListCarComponent,
         CarDetailComponent,
         ReservationComponent,
+        RatingComponent,
         
     ],
     imports: [

@@ -1,4 +1,4 @@
-import { Entity, Column, PrimaryGeneratedColumn , ManyToMany } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn , OneToMany } from 'typeorm';
 import{User} from '../../user/user.entity'
 import {Car} from '../../car/entities/car.entity' 
 
@@ -7,8 +7,8 @@ export class Rating {
     @PrimaryGeneratedColumn()
     id: number;
 
-    // @ManyToMany()
-
+    // @OneToMany(()=>)
+    
 
     @Column()
     stars:number;

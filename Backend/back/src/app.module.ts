@@ -5,14 +5,21 @@ import { UserModule } from './user/user.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { User } from './user/user.entity';
 import { Car } from './car/entities/car.entity';
+import { Reservation } from './reservation/entities/reservation.entity';
+
 
 import { CarModule } from './car/car.module';
 import { Connection } from 'typeorm';
 import { RatingModule } from './rating/rating.module';
+import { ReservationModule } from './reservation/reservation.module';
+import { MessagesModule } from './messages/messages.module';
+import { CommentModule } from './comment/comment.module';
 @Module({
   imports: [
+    ReservationModule,
     UserModule,
     CarModule,
+    RatingModule,
     TypeOrmModule.forRoot({
       type: 'mysql',
       host: 'localhost',
@@ -20,11 +27,11 @@ import { RatingModule } from './rating/rating.module';
       username: 'root',
       password: 'root',
       database: 'power',
-      entities: [Car, User],
+      entities: [Car, User, Reservation],
       synchronize: true,
     }),
-    RatingModule,
-    
+    MessagesModule,
+    CommentModule,
   ],
   controllers: [AppController],
   providers: [AppService],

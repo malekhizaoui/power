@@ -26,7 +26,7 @@
 #sx-fleetlist-wrapper-all {
   position: relative;
   width: 60%;
-    margin: 100px auto 0;
+  margin: 100px auto 0;
 }
 #sx-fleetlist-wrapper-all:after {
   content: ".";
@@ -504,50 +504,10 @@
     background-size: 90% auto;
   }
 }
-.sx-js-fleet-group-convertibles .sx-fleet-filter-hd {
-  background-image: url(/common/img/app/fleet/default/icon/fleet-filter/pic-convertible.svg);
-}
-.sx-js-fleet-group-convertibles.item-selected .sx-fleet-filter-hd {
-  background-image: url(/common/img/app/fleet/default/icon/fleet-filter/pic-convertible-selected.svg);
-}
-.sx-js-fleet-group-coup .sx-fleet-filter-hd {
-  background-image: url(/common/img/app/fleet/default/icon/fleet-filter/pic-sports-car.svg);
-}
-.sx-js-fleet-group-coup.item-selected .sx-fleet-filter-hd {
-  background-image: url(/common/img/app/fleet/default/icon/fleet-filter/pic-sports-car-selected.svg);
-}
-.sx-js-fleet-group-cars .sx-fleet-filter-hd {
-  background-image: url(/common/img/app/fleet/default/icon/fleet-filter/pic-limousine.svg);
-}
-.sx-js-fleet-group-cars.item-selected .sx-fleet-filter-hd {
-  background-image: url(/common/img/app/fleet/default/icon/fleet-filter/pic-limousine-selected.svg);
-}
-.sx-js-fleet-group-estates .sx-fleet-filter-hd {
-  background-image: url(/common/img/app/fleet/default/icon/fleet-filter/pic-suv.svg);
-}
-.sx-js-fleet-group-estates.item-selected .sx-fleet-filter-hd {
-  background-image: url(/common/img/app/fleet/default/icon/fleet-filter/pic-suv-selected.svg);
-}
-.sx-js-fleet-group-mpvs .sx-fleet-filter-hd {
-  background-image: url(/common/img/app/fleet/default/icon/fleet-filter/pic-van.svg);
-}
-.sx-js-fleet-group-mpvs.item-selected .sx-fleet-filter-hd {
-  background-image: url(/common/img/app/fleet/default/icon/fleet-filter/pic-van-selected.svg);
-}
-.sx-js-fleet-group-suv .sx-fleet-filter-hd {
-  background-image: url(/common/img/app/fleet/default/icon/fleet-filter/pic-suv.svg);
-}
-.sx-js-fleet-group-suv.item-selected .sx-fleet-filter-hd {
-  background-image: url(/common/img/app/fleet/default/icon/fleet-filter/pic-suv-selected.svg);
-}
-.sx-js-fleet-group-minibuses .sx-fleet-filter-hd {
-  background-image: url(/common/img/app/fleet/default/icon/fleet-filter/pic-minibuses.svg);
-}
-.sx-js-fleet-group-minibuses.item-selected .sx-fleet-filter-hd {
-  background-image: url(/common/img/app/fleet/default/icon/fleet-filter/pic-minibuses-selected.svg);
-}
+
 #sx-fleetlist-wrapper-all {
   position: relative;
+  background-color: rgb(61, 54, 54);
 }
 #sx-fleetlist-wrapper-all:after {
   content: ".";
@@ -581,7 +541,7 @@
   }
 }
 .sx-car-fleetlist li.sx-fleetlist-item {
-  background: #fff;
+  background: rgb(117, 108, 108);
   margin: 0 0 50px;
   padding: 20px 30px;
 }
@@ -702,7 +662,7 @@
   font-stretch: condensed;
   text-align: center;
   vertical-align: top;
-  color: #666;
+  color: rgb(75, 73, 73);
 }
 .sx-car-fleetlist .sx-fleetlist-offerinfo .offerinfo-lkw-list {
   font-size: 16px;
@@ -767,7 +727,7 @@
   .sx-car-fleetlist .sx-fleetlist-img {
     display: none;
     width: 100%;
-    background: none;
+    background: grey;
   }
   .sx-car-fleetlist .sx-fleetlist-img img {
     max-width: 100%;
@@ -809,7 +769,7 @@
 .sx-car-fleetlist .sx-fleetlist-equipment li {
   font-size: 14px;
   text-align: left;
-  color: #666;
+  color: rgb(93, 83, 83);
   width: 50%;
   box-sizing: border-box;
 }
@@ -821,41 +781,7 @@
     width: 45%;
   }
 }
-.sx-car-fleetlist
-  .offerfeatures-delorean
-  .sx-fleetlist-equipment
-  li.sx-delor-equipment-time
-  strong {
-  background-image: url(/common/img/app/fleet/default/icon/fleet-filter/delorean-icons/clock.svg);
-}
-.sx-car-fleetlist
-  .offerfeatures-delorean
-  .sx-fleetlist-equipment
-  li.sx-delor-equipment-capacity
-  strong {
-  background-image: url(/common/img/app/fleet/default/icon/fleet-filter/delorean-icons/flux_capacitor.svg);
-}
-.sx-car-fleetlist
-  .offerfeatures-delorean
-  .sx-fleetlist-equipment
-  li.sx-delor-equipment-hover
-  strong {
-  background-image: url(/common/img/app/fleet/default/icon/fleet-filter/delorean-icons/hoverboard.svg);
-}
-.sx-car-fleetlist
-  .offerfeatures-delorean
-  .sx-fleetlist-equipment
-  li.sx-delor-equipment-doors
-  strong {
-  background-image: url(/common/img/app/fleet/default/icon/fleet-filter/delorean-icons/gull-wing-doors.svg);
-}
-.sx-car-fleetlist
-  .offerfeatures-delorean
-  .sx-fleetlist-equipment
-  li.sx-equipment-seats
-  strong {
-  background-image: url(/common/img/app/reservation/default/icon/icons-equipment.png);
-}
+
 .sx-car-fleetlist .sx-fleetlist-equipment.lkw-equipment li {
   width: 100%;
 }
@@ -988,11 +914,7 @@
   margin-right: 22px;
   padding: 15px 0 !important;
 }
-.sx-car-fleetlist .sx-fleetlist-button .sx-gc-button-cta span {
-  background: #ff7d19
-    url(/common/img/app/reservation/default/ibe-horizontal/icons/button_arrow@3x.svg)
-    no-repeat 50% 50%;
-}
+
 @media (max-width: 799px) {
   .sx-car-fleetlist .sx-fleetlist-button .sx-gc-button-cta {
     margin: 0 auto;

@@ -1,5 +1,6 @@
-import { Column, Entity, PrimaryGeneratedColumn , OneToMany } from 'typeorm';
+import { Column, Entity, PrimaryGeneratedColumn , OneToMany ,ManyToOne } from 'typeorm';
 import {Car} from '../car/entities/car.entity'
+import {Reservation} from '../reservation/entities/reservation.entity'
 
 @Entity()
 export class User {
@@ -8,6 +9,9 @@ export class User {
 
   @OneToMany(()=>Car, car =>car.users)
   cars : Car [];
+
+  @ManyToOne(()=>Reservation , reservation=>reservation.id)
+  reservation:Reservation[]
 
   @Column()
   FirstName: String;
